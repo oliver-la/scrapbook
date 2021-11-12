@@ -1,0 +1,6 @@
+$minimum_font_size: 24px; // never go below this value
+$keep_minimum_until_breakpoint: 400px; // up until 400px viewport width, we'll use the minimum, after that, the calculated font size
+$maximum_font_size: 64px; // never go past this value
+$maximum_font_size_after_breakpoint: 1600px; // keep growing font size until maximum font size until this breakpoint
+
+font-size: min(#{$maximum_font_size}, calc(#{$minimum_font_size} + (#{$maximum_font_size / 1px} - #{$minimum_font_size / 1px}) * ((100vw - #{$keep_minimum_until_breakpoint}) / (#{$maximum_font_size_after_breakpoint / 1px} - #{$keep_minimum_until_breakpoint / 1px})))) !important;
