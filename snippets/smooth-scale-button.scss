@@ -1,0 +1,22 @@
+.btn {
+  position: relative;
+  transform-style: preserve-3d;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateZ(-1px);
+    transition: transform 0.2s ease-in-out;
+    background: inherit;
+    content: " ";
+  }
+
+  &:hover {
+    &:before {
+      transform: translateZ(-1px) scale(1.1, 1.2);
+    }
+  }
+}
