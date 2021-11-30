@@ -116,3 +116,13 @@ $switch-indicator-clearance: 4px !default;
   }
 }
 ````
+
+variables.scss (example)
+
+````scss
+$switch-height: 32px;
+$switch-width: 80px;
+$switch-indicator-width: 24px;
+$switch-indicator-clearance: 4px;
+$custom-switch-indicator-border-radius: 9999px;
+````
