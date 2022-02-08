@@ -7,7 +7,6 @@ defaults write com.apple.screencapture type png
 defaults write com.apple.screencapture save-selections 0
 defaults write com.apple.screencapture show-thumbnail 0
 defaults write com.apple.screencapture showsCursor 1
-defaults write com.apple.screencapture target clipboard
 
 ##
 # Fix annoying stuff
